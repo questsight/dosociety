@@ -1,0 +1,31 @@
+extends ../layouts/layout_02.pug
+
+block site__content
+  .contentProfile
+    .row
+      .col-lg-4.col-md-4.col-sm-4.col-xs-12
+        .contentProfile__avatarCover
+          .contentProfile__avatar
+            img(src='assets/img/avatar/avatar.JPG')
+          .contentProfile__newFoto &uarr; Обновить фото
+          .contentProfile__newFotoHide &times
+        .contentProfile__status Online
+        button.contentProfile__button#buttonMessage Написать сообщение
+        button.contentProfile__button#buttonAddFriend Добавить в друзья
+        button.contentProfile__button#buttonDelFriend Удалить из друзей
+      .col-lg-8.col-md-8.col-sm-8.col-xs-12
+        .contentProfile__name Фрося Бурлакова
+        .row.contentProfile__info
+          .col-lg-4.col-md-5.col-sm-5.col-xs-4.contentProfile__parameter День рождения:
+          .col-lg-8.col-md-7.col-sm-7.col-xs-8.contentProfile__value 25 июля 1995г.
+        .row.contentProfile__info
+          .col-lg-4.col-md-5.col-sm-5.col-xs-4.contentProfile__parameter Город:
+          .col-lg-8.col-md-7.col-sm-7.col-xs-8.contentProfile__value Ярославль
+        .row.contentProfile__info
+          .col-lg-4.col-md-5.col-sm-5.col-xs-4.contentProfile__parameter Образование:
+          .col-lg-8.col-md-7.col-sm-7.col-xs-8.contentProfile__value ЯГПУ им.Ушинского`17
+        .row.contentProfile__info
+          .col-lg-4.col-md-5.col-sm-5.col-xs-4.contentProfile__parameter Место работы:
+          .col-lg-8.col-md-7.col-sm-7.col-xs-8.contentProfile__value Группа компаний "Метро" | Недвижимость Ярославля
+              
+block sidebar

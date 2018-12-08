@@ -1,0 +1,26 @@
+.sidebar__friendPotential
+  margin-top 30px
+  margin-right -40px
+  font-size 16px
+  +responsive(md)
+    display none
+  ul
+    list-style-type none
+    margin-bottom 0
+    font-weight bold
+    li:first-child
+      border-top none
+    li
+      font-weight normal
+      border-top 1px solid baseColor
+      margin-left -40px
+      height 54px
+      padding-top 7px
+      &:hover
+        background baseColor
+        .sidebar__friendPotential__sum
+          color accentColor
+        a
+          color accentColor
+      a
+        text-decoration none

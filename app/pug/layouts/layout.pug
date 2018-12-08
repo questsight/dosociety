@@ -1,0 +1,22 @@
+doctype html
+html
+  include ../includes/head.pug
+  body.body
+    .loaderArea
+      .loader
+        img(src='assets/img/logo/logo_blue.png')
+    .site
+      .buttonNavigator &raquo
+      .buttonSidebar &laquo
+      include ../includes/header.pug
+      .container
+        .row
+          .col-lg-2.col-md-2.col-sm-3.hidden-xs.hidden-xsNo
+            include ../includes/navigation.pug
+          .col-lg-8.col-md-8.col-sm-9.col-xs-12.content
+            block site__content
+          .col-lg-2.col-md-2.hidden-sm.hidden-xs.hidden-smNo
+            include ../includes/sidebar.pug
+      //include ../includes/footer.pug
+    script(src='assets/js/vendor.min.js')
+    script(src='assets/js/scripts.min.js')

@@ -1,0 +1,63 @@
+extends ../layouts/layout.pug
+
+block site__content
+  include ../includes/dialog.pug
+  
+block sidebar
+  form.formSearchDialog(action='', method='get')
+    input.formSearchDialog__input(name='s', placeholder='Поиск...', type='search', required='')
+    button.formSearchDialog__button(type='submit')
+      img(src='assets/img/search/search.png')
+    button.formSearchDialog__buttonAdd &#10010;
+  nav.sidebar__dialogChoice
+    ul
+      li
+        .sidebar__dialogChoice__avatar
+            a(href='#')
+              img(src='assets/img/nav/1_nav.png')
+            .avatarOnline
+        .sidebar__dialogChoice__name
+          a(href='#') Наталия Гончарова
+    ul
+      li
+        .sidebar__dialogChoice__avatar
+            a(href='#')
+              img(src='assets/img/nav/1_nav.png')
+        .sidebar__dialogChoice__name
+          a(href='#') Ксения Боголюбская
+    ul
+      li
+        .sidebar__dialogChoice__avatar
+            a(href='#')
+              img(src='assets/img/nav/1_nav.png')
+            .avatarOnline
+        .sidebar__dialogChoice__name
+          a(href='#') Варвара Иванова
+    ul
+      li
+        .sidebar__dialogChoice__avatar
+            a(href='#')
+              img(src='assets/img/nav/1_nav.png')
+        .sidebar__dialogChoice__name
+          a(href='#') Вася Пупкин
+    ul
+      li
+        .sidebar__dialogChoice__avatar
+            a(href='#')
+              img(src='assets/img/nav/1_nav.png')
+        .sidebar__dialogChoice__name
+          a(href='#') Иван Иванов
+    ul
+      li
+        .sidebar__dialogChoice__avatar
+            a(href='#')
+              img(src='assets/img/nav/1_nav.png')
+        .sidebar__dialogChoice__name
+          a(href='#') Петр Петров
+    ul
+      li
+        .sidebar__dialogChoice__avatar
+            a(href='#')
+              img(src='assets/img/nav/1_nav.png')
+        .sidebar__dialogChoice__name
+          a(href='#') Сидр Сидоров

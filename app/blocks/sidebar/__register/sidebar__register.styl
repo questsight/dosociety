@@ -1,0 +1,23 @@
+.sidebar__register
+  margin-top 10px
+  margin-right -20px
+  +responsive(sm)
+    
+    margin-right auto
+    text-align right
+  +responsive(xs)
+    margin-top 0
+  ul
+    list-style-type none
+    margin-bottom 0
+    li
+      padding 7px
+      &:hover
+        background #bbced6
+        +responsive(sm)
+          a
+            color baseColor
+      a
+        text-decoration none
+        +responsive(sm)
+          color accentColor

@@ -1,0 +1,175 @@
+extends ../layouts/layout.pug
+
+block site__content
+  .contentTuning
+    .contentTuning__exit
+      img(src='assets/img/tuning/exit.png')
+      a(href='#') Выйти из аккаунта
+    .contentTuning__new 
+      .contentTuning__infinity &infin;
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Пароль
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning____value Изменен 4 месяца назад
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changePassword
+        a(href='#') Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelPassword
+        a(href='#') Отмена
+    .contentTuning__new
+      .contentTuning__infinity#infinityPassword &infin;
+      .contentTuning__yes#yesPassword Пароль изменен
+      .contentTuning__novel#novelPassword
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Старый пароль
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__input.contentTuning__newParameter(type='password', name='password', value='', placeholder='Пароль')
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый пароль
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__input.contentTuning__newParameter(type='password', name='password', value='', placeholder='Пароль')
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.newParameter.contentTuning__newParameter Повторите пароль
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__input.contentTuning__newParameter(type='password', name='password', value='', placeholder='Пароль')
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5 
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            .contentTuning__error#errorOldPassword Не верно указан старый пароль
+            .contentTuning__error#errorNewPassword Новые пароли не совпадают
+            button.contentTuning__button.contentTuning__newParameter#buttonNewPassword Изменить пароль
+        .contentTuning__delimiter
+      
+      
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Электронная почта
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning____value mail@gmail.com
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changeEmail
+        a(href='#') Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelEmail
+        a(href='#') Отмена
+    .contentTuning__new 
+      .contentTuning__infinity#infinityEmail &infin;
+      .contentTuning__yes#yesEmail E-mail изменен
+      .contentTuning__novel#novelEmail
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый e-mail
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__input.contentTuning__newParameter(placeholder='Email')
+        .contentTuning__delimiter
+        
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5 
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            .contentTuning__error#errorEmail Не удалось отправить код подтверждения на указанный адрес
+            button.contentTuning__button.contentTuning__newParameter#buttonNewEmail Изменить e-mail
+        .contentTuning__delimiter
+      
+      .contentTuning__novel#novelEmailCode
+        .contentTuning__delimiter
+        .contentTuning__novelReport На ваш e-mail отправлено письмо с кодом подтверждения. Пожалуйста, введите код
+        .contentTuning__delimiter
+        .contentTuning__novelReport Отправить повторно через 
+          span#timerEmail 59
+          span с.
+          span.contentTuning__novelReportRepeat#repeatEmail
+            a(href='#') Отправить
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Код подтверждения
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__input.contentTuning__newParameter(placeholder='Код')
+        .contentTuning__delimiter
+        
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5 
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            .contentTuning__error#errorEmailCode Не верный код подтверждения, попробуйте еще раз
+            button.contentTuning__button.contentTuning__newParameter#buttonNewEmail Подтвердить
+        .contentTuning__delimiter
+      
+      
+    
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Телефон
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning____value +7(926)000-00-00
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changePhone
+        a(href='#') Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelPhone
+        a(href='#') Отмена
+    .contentTuning__new 
+      .contentTuning__infinity#infinityPhone &infin;
+      .contentTuning__yes#yesPhone Телефон изменен
+      .contentTuning__novel#novelPhone
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый телефон
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__input.contentTuning__newParameter(placeholder='Телефон')
+        .contentTuning__delimiter
+        
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5 
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            .contentTuning__error#errorPhone Не удалось отправить код подтверждения на указанный номер
+            button.contentTuning__button.contentTuning__newParameter#buttonNewPhone Изменить телефон
+        .contentTuning__delimiter
+      
+      .contentTuning__novel#novelPhoneCode
+        .contentTuning__delimiter
+        .contentTuning__novelReport Вам отправлено СМС с кодом подтверждения. Пожалуйста, введите код
+        .contentTuning__delimiter
+        .contentTuning__novelReport Отправить повторно через 
+          span#timerPhone 59
+          span с.
+          span.contentTuning__novelReportRepeat#repeatPhone
+            a(href='#') Отправить
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Код подтверждения
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__input.contentTuning__newParameter(placeholder='Код')
+        .contentTuning__delimiter
+        
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5 
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            .contentTuning__error#errorPhoneCode Не верный код подтверждения, попробуйте еще раз
+            button.contentTuning__button.contentTuning__newParameter#buttonNewPhone Подтвердить
+        .contentTuning__delimiter
+
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Адрес страницы
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning____value dosociety.net/id123123
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changeURL
+        a(href='#') Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelURL
+        a(href='#') Отмена
+    .contentTuning__new
+      .contentTuning__infinity#infinityURL &infin;
+      .contentTuning__yes#yesURL Адрес страницы изменён
+      .contentTuning__novel#novelURL
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый адрес
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            span.contentTuning__URL dosociety.net/
+            input.contentTuning__input.contentTuning__newParameter(placeholder='Номер страницы')
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5 
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            .contentTuning__error#errorURL Данный адрес не доступен. Пожалуйста, попробуйте еще раз.
+            button.contentTuning__button.contentTuning__newParameter#buttonNewURL Изменить адрес
+        .contentTuning__delimiter
+      
+
+    .contentTuning__delete
+      img(src='assets/img/tuning/delete.png')
+      a(href='#') Удалить аккаунт
+  
+block sidebar
+  include ../includes/register.pug

@@ -1,0 +1,45 @@
+.navigator
+  margin-top 10px
+  margin-right -20px
+  font-size 16px
+  +responsive(xs)
+    display none
+    position fixed
+    z-index 3
+    background baseColor
+    opacity 0.6
+    height 100%
+    top 45px
+    left 0
+    width 195px
+    margin-top 0
+    margin-right 0
+  +responsive(xxs)
+    top 40px
+  ul
+    list-style-type none
+    margin-bottom 0
+    li
+      margin-left -60px
+      padding 7px
+      +responsive(xs)
+        margin-left -40px
+      &:hover
+        background #bbced6
+        +responsive(xs)
+          a
+            color baseColor
+          img
+            filter none
+          
+      img
+        width 25px
+        margin-right 10px
+        margin-bottom 5px
+        float left
+        +responsive(xs)
+          filter brightness(0) invert(1)
+      a
+        text-decoration none
+        +responsive(xs)
+          color accentColor

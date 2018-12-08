@@ -1,0 +1,112 @@
+.contentRegistration__newFoto
+  position absolute
+  z-index 2
+  bottom 0
+  left 0
+  right 0
+  height 35px
+  background-color baseColor
+  opacity .6
+  color lightColor
+  text-align center
+  padding-top 3px
+  font-size 18px
+  cursor pointer
+.contentRegistration__value
+  margin-top 20px
+  font-size 18px
+  +responsive(xs)
+    float left
+  +responsive(xxs)
+    font-size 16px
+.contentRegistration__change
+  margin-top 22px
+  +responsive(xs)
+    margin-left -70px
+  +responsive(550px)
+    margin-left -50px
+  +responsive(xxs)
+    margin-left -20px
+  +responsive(370px)
+    margin-left 0
+  a
+    font-size 16px
+    color onlineColor
+    text-decoration underline
+    +responsive(xxs)
+      font-size 13px
+.contentRegistration__button
+  margin-top 40px
+.contentRegistration__avatarCover
+  position relative
+  width 100%
+  max-width 200px
+  +responsive(xs)
+    width 20vw
+    float right
+  +responsive(xxs)
+    width 35vw
+    float inherit
+.contentRegistration__error
+  color crimson
+  +responsive(xxs)
+    font-size 14px
+.contentRegistration__letter
+  +responsive(xs)
+    font-size 15px
+  +responsive(xxs)
+    font-size 13px
+.contentRegistration__value_left_0
+  +responsive(400px)
+    left 0!important
+.contentRegistration__value_left_16
+  +responsive(400px)
+    left 16.66%!important
+#saveSurname
+  display none
+  margin-left 130px
+  +responsive(sm)
+    margin-left 120px
+  +responsive(625px)
+    margin-left 100px
+  +responsive(550px)
+    margin-left 60px
+  +responsive(xxs)
+    margin-left 30px
+  &:after
+    content 'Сохранить'
+    +responsive(550px)
+      content '\2714'
+#saveName
+  display none
+  margin-left 130px
+  +responsive(sm)
+    margin-left 120px
+  +responsive(625px)
+    margin-left 100px
+  +responsive(550px)
+    margin-left 60px
+  +responsive(xxs)
+    margin-left 30px
+  &:after
+    content 'Сохранить'
+    +responsive(550px)
+      content '\2714'
+#newSurname
+  display none
+  input
+    +responsive(625px)
+      width 180px
+    +responsive(550px)
+      width 150px
+    +responsive(xxs)
+      width 120px
+#newName
+  display none
+  input
+    +responsive(625px)
+      width 180px
+    +responsive(550px)
+      width 150px
+    +responsive(xxs)
+      width 120px

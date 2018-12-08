@@ -1,0 +1,28 @@
+.sidebar__dialogChoice
+  margin-top 10px
+  margin-right -40px
+  font-size 16px
+  +responsive(md)
+    margin-right -15px
+  ul
+    list-style-type none
+    margin-bottom 0
+    border-top 1px solid baseColor
+    +responsive(md)
+      float left
+      border none
+      margin 5px
+  ul:first-child
+      border-top none
+    li
+      margin-left -40px
+      height 54px
+      padding-top 7px
+      &:hover
+        background baseColor
+        a
+          color accentColor
+      a
+        text-decoration none
+        &:hover
+          color accentColor

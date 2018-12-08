@@ -1,0 +1,26 @@
+.sidebar__friendList
+  margin-top 10px
+  margin-right -40px
+  font-size 16px
+  +responsive(md)
+    margin-right -15px
+  ul
+    list-style-type none
+    font-weight bold
+    +responsive(sm)
+      color accentColor
+    li
+      padding 3px
+      font-weight normal
+      +responsive(sm)
+        &:hover
+          a
+            color baseColor
+      a
+        text-decoration none
+        +responsive(sm)
+          color accentColor
+          &:hover
+            color baseColor
+      &:hover
+        background #bbced6

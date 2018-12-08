@@ -1,0 +1,60 @@
+extends ../layouts/layout.pug
+
+block site__content
+  .contentTuning.container-fluid
+    .contentTuning__new
+      .contentTuning__infinity &infin; 
+    .row
+      .col-lg-4.col-md-4.col-sm-5.col-xs-4.contentTuning__parameter Политические убеждения
+      .col-lg-8.col-md-8.col-sm-7.col-xs-8
+        select.contentTuning__input.contentTuning__oldParameter
+          option(value='') Не выбраны
+          option(value='') Индифферентные
+          option(value='') Коммунистические
+          option(value='') Социалистические
+          option(value='') Умеренные
+          option(value='') Либеральные
+          option(value='') Консервативные
+          option(value='') Ультраконсервативные
+          option(value='') Либертарианские
+          option(value='') Другие
+        .contentTuning__delimiter
+        .contentTuning__delimiter
+    .contentTuning__new
+      .contentTuning__infinity &infin; 
+    .row
+      .col-lg-4.col-md-4.col-sm-5.col-xs-4.contentTuning__parameter Религиозные убеждения
+      .col-lg-8.col-md-8.col-sm-7.col-xs-8
+        select.contentTuning__input.contentTuning__oldParameter
+          option(value='') Не выбраны
+          option(value='') Православие
+          option(value='') Иудаизм
+          option(value='') Католицизм
+          option(value='') Протестанизм
+          option(value='') Ислам
+          option(value='') Буддизм
+          option(value='') Конфуцианство
+          option(value='') Пастафарианство
+          option(value='') Другие
+        .contentTuning__delimiter
+        .contentTuning__delimiter
+    .contentTuning__new
+      .contentTuning__infinity &infin;  
+    .row
+      .col-lg-4.col-md-4.col-sm-5.col-xs-4.contentTuning__parameter Любимые цитаты
+      .col-lg-8.col-md-8.col-sm-7.col-xs-8
+        .contentTuning__quote
+          input.contentTuning__input.contentTuning__oldParameter
+          .contentTuning__delimiter
+          .contentTuning__delimiter
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12  
+        button.contentTuning__button.center-block#buttonQuote Добавить
+    .contentTuning__new
+      .contentTuning__infinity &infin;        
+    .row        
+      .col-lg-12.col-md-12.col-sm-12.col-xs-12  
+        button.contentTuning__button.center-block Сохранить
+      
+  
+block sidebar
+  include ../includes/register.pug
