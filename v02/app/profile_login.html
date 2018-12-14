@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Computers</title>
+    <link rel="stylesheet" href="assets/css/vendor.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+  </head>
+  <body class="body">
+    <div class="site">
+      <div class="buttonNavigator">&raquo</div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-sm-3 hidden-xs hidden-xsNo">
+            <div class="navigator">
+              <form class="navigator__formLogin" method="post" action="index.html">
+                <div>
+                  <input class="formLogin__input" type="text" name="login" value="" placeholder="Телефон или Email">
+                </div>
+                <div> 
+                  <input class="formLogin__input" type="password" name="password" value="" placeholder="Пароль">
+                  <div class="error" id="formLogin__error">Вы ввели неверный логи или пароль. Пожалуйста, проверьте правильность написания и повторите попытку.</div>
+                </div>
+                <p>
+                  <button class="button_color_accent">Войти</button>
+                </p>
+                <p><a href="#">Забыли пароль?</a></p>
+                <div class="formLogin__socia"><a href="#" onclick="javascript: openid_vk()" title="Войти, используя ВКонтакте"><span class="fa fa-vk"></span><span class="formLogin__socialLink">Зарегистрироваться через ВКонтакте</span></a></div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-sm-9 col-xs-12 content">
+            <div class="contentProfile">
+              <div class="contentProfile__basic">
+                <div class="contentProfile__fon"><img src="assets/img/fon_friend.jpg"></div>
+                <div class="contentProfile__avatar"><img src="assets/img/avatar.jpg">
+                  <div class="contentProfile__newFoto">&uarr; Обновить фото</div>
+                  <div class="contentProfile__newFotoHide">&times</div>
+                  <div class="contentProfile__status">Online</div>
+                </div>
+                <div class="contentProfile__name">Имягдеёжзийклмнопрст Фамилияжзийклмнопрст</div>
+                <button class="contentProfile__button button_color_light" id="buttonMessage">Написать сообщение</button>
+                <button class="contentProfile__button button_color_light" id="buttonAddFriend">Добавить в друзья</button>
+                <button class="contentProfile__button button_color_light" id="buttonDelFriend">Удалить из друзей</button>
+                <button class="contentProfile__button button_color_light" id="buttonChangeCover">Изменить обложку</button>
+              </div>
+              <div class="row contentProfile__info">
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">День рождения:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-5 contentProfile__value">25 июля 1995г</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Пол:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Женский</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Родной город:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Ярославль</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Город проживания:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Ярославль</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Семейное положение:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Не замужем</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Девечья фамилия:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Фамилия</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Образование:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">ЯГПУ им.Ушинского`17</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Военная служба:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Военная служба</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Место работы:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Группа компаний "Метро" | Недвижимость Ярославля</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Политические убеждения:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Политические убеждения</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Религиозные убеждения:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Религиозные убеждения</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Любимые цитаты:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Любимые цитаты Любимые цитаты Любимые цитаты Любимые цитаты Любимые цитаты Любимые цитаты</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Бабушки, дедушки:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Бабушки, дедушки</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Родители:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Родители</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Братья, сестры:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Братья, сестры</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Муж, жена:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Муж, жена</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Дети:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Дети</div>
+                <div class="clearfix"></div>
+                <div class="col-lg-4 col-md-5 col-sm-5 col-xs-5 contentProfile__parameter">Внуки:</div>
+                <div class="col-lg-8 col-md-7 col-sm-7 col-xs-7 contentProfile__value">Внуки</div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 hidden-sm hidden-xs hidden-smNo">
+            <aside class="sidebar"><img class="sidebar__logo1" src="assets/img/logo/logo_1.png"><img class="sidebar__logo" src="assets/img/logo/logo.png">
+            </aside>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="assets/js/vendor.min.js"></script>
+    <script src="assets/js/scripts.min.js"></script>
+  </body>
+</html>

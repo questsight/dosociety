@@ -1,0 +1,15 @@
+.navigator
+  form.navigator__formLogin(method='post', action='index.html')
+    div
+      input.formLogin__input(type='text', name='login', value='', placeholder='Телефон или Email')
+    div  
+      input.formLogin__input(type='password', name='password', value='', placeholder='Пароль')
+      .error#formLogin__error Вы ввели неверный логи или пароль. Пожалуйста, проверьте правильность написания и повторите попытку.
+    p
+      button.button_color_accent Войти
+    p
+      a(href='#') Забыли пароль?
+    .formLogin__socia
+      a(href='#', onclick='javascript: openid_vk()', title='Войти, используя ВКонтакте')
+        span.fa.fa-vk
+        span.formLogin__socialLink Зарегистрироваться через ВКонтакте

@@ -1,0 +1,159 @@
+extends ../layouts/layout_2.pug
+
+block site__content
+  .contentTuning
+    .contentTuning__exit
+      img(src='assets/img/tuning/exit.png')
+      a(href='#') Выйти из аккаунта
+    .contentTuning__new 
+      .contentTuning__infinity &infin;
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Пароль
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning__value Изменен 4 месяца назад
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changePassword Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelPassword Отмена
+    .contentTuning__new
+      .contentTuning__infinity#infinityPassword &infin;
+      .info#yesPassword Пароль изменен
+      .contentTuning__novel#novelPassword
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Старый пароль
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input(type='password', name='password', value='', placeholder='Пароль')
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый пароль
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input(type='password', name='password', value='', placeholder='Пароль')
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Повторите пароль
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input(type='password', name='password', value='', placeholder='Пароль')
+        .contentTuning__delimiter
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .error#errorOldPassword Не верно указан старый пароль
+            .error#errorNewPassword Новые пароли не совпадают
+            button.button_color_accent.contentTuning__button.center-block#buttonNewPassword Изменить пароль
+        .contentTuning__delimiter
+      
+      
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Электронная почта
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning__value mail@gmail.com
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changeEmail Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelEmail Отмена
+    .contentTuning__new 
+      .contentTuning__infinity#infinityEmail &infin;
+      .info#yesEmail E-mail изменен
+      .contentTuning__novel#novelEmail
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый e-mail
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__newParameter(placeholder='Email')
+        .contentTuning__delimiter
+        
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .error#errorEmail Не удалось отправить код подтверждения на указанный адрес
+            button.button_color_accent.contentTuning__button.center-block#buttonNewEmail Изменить e-mail
+        .contentTuning__delimiter
+      
+      .contentTuning__novel#novelEmailCode
+        .contentTuning__delimiter
+        .info На ваш e-mail отправлено письмо с кодом подтверждения. Пожалуйста, введите код
+        .contentTuning__delimiter
+        .info Отправить повторно через 
+          span#timerEmail 59
+          span с.
+          span.info#repeatEmail Отправить
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-6.contentTuning__newParameter Код подтверждения
+          .col-lg-9.col-md-9.col-sm-8.col-xs-6
+            input.contentTuning__newParameter(placeholder='Код')
+        .contentTuning__delimiter
+        
+        .row 
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .error#errorEmailCode Не верный код подтверждения, попробуйте еще раз
+            button.button_color_accent.contentTuning__button.center-block#buttonNewEmail Подтвердить
+        .contentTuning__delimiter
+      
+      
+    
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Телефон
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning__value +7(926)000-00-00
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changePhone Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelPhone Отмена
+    .contentTuning__new 
+      .contentTuning__infinity#infinityPhone &infin;
+      .info#yesPhone Телефон изменен
+      .contentTuning__novel#novelPhone
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый телефон
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            input.contentTuning__newParameter(placeholder='Телефон')
+        .contentTuning__delimiter
+        
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .error#errorPhone Не удалось отправить код подтверждения на указанный номер
+            button.button_color_accent.contentTuning__button.center-block#buttonNewPhone Изменить телефон
+        .contentTuning__delimiter
+      
+      .contentTuning__novel#novelPhoneCode
+        .contentTuning__delimiter
+        .info Вам отправлено СМС с кодом подтверждения. Пожалуйста, введите код
+        .contentTuning__delimiter
+        .info Отправить повторно через 
+          span#timerPhone 59
+          span с.
+          span.info#repeatPhone Отправить
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-6.contentTuning__newParameter Код подтверждения
+          .col-lg-9.col-md-9.col-sm-8.col-xs-6
+            input.contentTuning__newParameter(placeholder='Код')
+        .contentTuning__delimiter
+        
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .error#errorPhoneCode Не верный код подтверждения, попробуйте еще раз
+            button.button_color_accent.contentTuning__button.center-block#buttonNewPhone Подтвердить
+        .contentTuning__delimiter
+
+    .row
+      .col-lg-3.col-md-3.col-sm-3.col-xs-12.contentTuning__parameter Адрес страницы
+      .col-lg-6.col-md-6.col-sm-6.col-xs-8.contentTuning__value dosociety.net/id123123
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__change#changeURL Изменить
+      .col-lg-3.col-md-3.col-sm-3.col-xs-4.contentTuning__cancel#cancelURL Отмена
+    .contentTuning__new
+      .contentTuning__infinity#infinityURL &infin;
+      .info#yesURL Адрес страницы изменён
+      .contentTuning__novel#novelURL
+        .contentTuning__delimiter
+        .row
+          .col-lg-3.col-md-3.col-sm-4.col-xs-5.contentTuning__newParameter Новый адрес
+          .col-lg-9.col-md-9.col-sm-8.col-xs-7
+            span.contentTuning__URL dosociety.net/
+            input.contentTuning__newParameter(placeholder='Номер страницы')
+        .contentTuning__delimiter
+        .row
+          .col-lg-12.col-md-12.col-sm-12.col-xs-12
+            .error#errorURL Данный адрес не доступен. Пожалуйста, попробуйте еще раз.
+            button.button_color_accent.contentTuning__button.center-block#buttonNewURL Изменить адрес
+        .contentTuning__delimiter
+      
+
+    .contentTuning__delete
+      img(src='assets/img/tuning/delete.png')
+      a(href='#') Удалить аккаунт
+  
+block sidebar
+  include ../includes/register.pug

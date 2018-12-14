@@ -1,0 +1,45 @@
+extends ../layouts/main.pug
+
+block site__content
+  .contentRegistration
+    .row
+      .col-lg-5.col-md-5.col-sm-5.col-xs-5
+        .contentRegistration__avatarCover
+          img(src='assets/img/avatar.jpg')
+          .contentRegistration__newFoto Изменить фото
+      .col-lg-4.col-md-4.col-sm-4.col-xs-7
+        .contentRegistration__value#surname Фамилияжзийклмнопрст
+        input#newSurname(placeholder='Введите фамилию')
+      .col-lg-3.col-md-3.col-sm-3.col-xs-7.contentRegistration__change
+        a#changeSurname(href='#') Изменить
+        a#saveSurname(href='#') Сохранить
+      .col-lg-4.col-md-4.col-sm-4.col-xs-7
+        .contentRegistration__value#name Имягдеёжзийклмнопрст
+        input#newName(placeholder='Введите имя')
+      .col-lg-3.col-md-3.col-sm-3.col-xs-7.contentRegistration__change
+        a#changeName(href='#') Изменить
+        a#saveName(href='#') Сохранить
+      .col-lg-7.col-md-7.col-sm-7.col-xs-7
+        input(placeholder='Введите Email')
+        input(type='password', placeholder='Введите пароль')
+        input(type='password', placeholder='Повторите пароль')
+      .clearfix
+      .col-xs-12
+        .error.text-center#errorNewPassword Указанные пароли не совпадают. Пожалуйста, повторите попытку.
+        .error.text-center#errorEmail Не удалось отправить код подтверждения на указанный адрес 
+      .col-lg-6.col-md-6.col-sm-6.col-xs-6.text-right
+        button.button_color_theme Отмена
+      .col-lg-6.col-md-6.col-sm-6.col-xs-6.text-left
+        button.button_color_theme#reg Подтвердить 
+      .col-xs-12#regEmailCode
+        .info На ваш e-mail отправлено письмо с кодом подтверждения. Пожалуйста, введите код
+        .info Отправить повторно через 
+          span#timerEmail 59
+          span с.
+          span#repeatEmail Отправить
+        .col-lg-6.col-md-6.col-sm-6.col-xs-12 Код подтверждения
+        .col-lg-6.col-md-6.col-sm-6.col-xs-12
+          input(placeholder='Код')
+        .col-xs-12
+          .error.text-center#errorEmailCode Не верный код подтверждения, попробуйте еще раз
+          button.button_color_theme.center-block#buttonNewEmail Отправить            

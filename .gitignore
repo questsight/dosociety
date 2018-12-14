@@ -1,3 +1,6 @@
-/node_modules
-/app/materials
-/app/vendor
+v01/node_modules
+v01/app/materials
+v01/app/vendor
+v02/node_modules
+v02/app/materials
+v02/app/vendor

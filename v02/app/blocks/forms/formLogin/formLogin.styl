@@ -1,0 +1,37 @@
+.formLogin
+  background themeColor
+  width 100%
+  max-width 300px
+  text-align center
+  border-radius: 30px
+  margin 0
+  transform translate(-50%, -50%)
+  position absolute
+  top 50%
+  left 50%
+  z-index 1
+  a
+    color lightColor
+    text-decoration none
+    &:hover, &:focus, &:active
+      color accentColor
+      text-decoration none
+  img
+    margin 20px
+    width calc(100% - 40px)
+  animation-name formLogin
+  animation-duration 2s
+  animation-timing-function ease-in
+  animation-iteration-count 1
+  +responsive(xs)
+    width 70%
+  +responsive(xxs)
+    width 100%
+@keyframes formLogin {
+  from {
+    opacity 0
+  }
+  to {
+    opacity 1
+  }
+}
